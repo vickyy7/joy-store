@@ -120,6 +120,7 @@ div#container {
 table {
     border-collapse: collapse;
     width: 700px;
+    margin: auto;
 }
 
 th, td {
@@ -163,6 +164,7 @@ footer {
     text-align: center;
     font-size: 0.8em;
     padding: 12px;
+    margin-bottom: 10px;
 }
 
 footer a {
@@ -174,5 +176,5 @@ footer a {
 
 footer a:hover {
     background-color: #4985F4;
-    transition-duration: 0.7s;
+    transition-duration: 0.5s;
 }
