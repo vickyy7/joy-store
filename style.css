@@ -98,6 +98,12 @@ main {
     border-bottom-right-radius: 15px;
 }
 
+main > article > img {
+    max-width: 400px;
+    display: block;
+    margin: auto;
+}
+
 main > article > h2 {
     font-family: var(--font-subtitulo);
     padding: 10px;
