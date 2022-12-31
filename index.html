@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+        }
+
+        th {
+            background-color: rgba(128, 128, 128, 0.774);
+        }
+
+        th, td {
+            border: 1px solid rgba(0, 0, 0, 0.571);
+            padding: 8px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(128, 128, 128, 0.507);
+        }
+
+        div#container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Joy Jewelry Store</h1>
+        <p>Faça sua graduação ainda mais especial.</p>
+        <menu>
+            <li><a href="#">Dúvidas</a></li>
+            <li><a href="#">Formulário de contato</a></li>
+            <li><a href="#">Faça seu orçamento</a></li>
+            <li><a href="#">Emblemas</a></li>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Sobre NÓS</h2>
+
+            <p>A Joy Jewelry Store é uma loja especializada na fabricação de anéis de formatura, desenvolvendo modelos
+                para todos os cursos. Comprar conosco é sinônimo de <strong>autencidade</strong>. Oferecemos frete
+                grátis e um período de 30 dias para troca, além de <b>1 ano de garantia</b> contra defeito de
+                fabricação. Além de tudo disso nossa entrega é uma da mais rápidas do mercado e o produto ainda chega em
+                uma embalagem tão querida que você não vai querer se desfazer.</p>
+
+            <h2>Emblemas</h2>
+
+            <p><strong>Cada área de graduação é representada por uma pedra, mas você sabe o porque</strong>?</p>
+            <div id="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pedra</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Rubi</th>
+                                <td>Conhecido pela marcante cor vermelha, que pode representar o amor, mas também o sangue, a ideia do ser humano como uma criatura mortal, por isso associada com <strong>ciências humanas</strong>.</td>
+                        </tr>
+
+                        <tr>
+                            <th>Safira</th>
+                            <td>Marcada pelo céu, e a ideia de sabedoria, busca pela verdade e exatidão, remetendo a sua coloração azul.</td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Esmeralda</th>
+                            <td>Reconhecida pela cor verde, trás a ideia de natureza, poder de cura e restauração da saúde, muito  associada a áreas biológicas e também as áreas da <strong>saúde</strong>.</td>
+                        </tr>
+
+                        <tr>
+                            <th>Ametista</th>
+                            <td>Associada a ciências socias, pela sua coloração violeta e a ideia de clarexa mental, além de utilizada como amuleto contra pensamentos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
