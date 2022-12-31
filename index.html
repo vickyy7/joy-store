@@ -6,47 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="all">
     <link rel="stylesheet" href="media-query.css">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 800px;
-        }
-
-        th {
-            background-color: rgba(128, 128, 128, 0.774);
-        }
-
-        th, td {
-            border: 1px solid rgba(0, 0, 0, 0.571);
-            padding: 8px;
-            text-align: center;
-        }
-
-        tr:nth-child(even) {
-            background-color: rgba(128, 128, 128, 0.507);
-        }
-
-        div#container {
-            overflow-x: auto;
-        }
-    </style>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Joy Jewelry Store</h1>
         <p>Faça sua graduação ainda mais especial.</p>
-        <menu>
-            <li><a href="#">Dúvidas</a></li>
-            <li><a href="#">Formulário de contato</a></li>
-            <li><a href="#">Faça seu orçamento</a></li>
-            <li><a href="#">Emblemas</a></li>
+        <span id="iburguer" class="material-symbols-outlined" onclick="clickMenu()">density_medium</span>
+        <menu id="imenu">
+            <ul>
+                <li><a href="#">Dúvidas</a></li>
+                <li><a href="#">Formulário de contato</a></li>
+                <li><a href="#">Faça seu orçamento</a></li>
+                <li><a href="#">Emblemas</a></li>
+            </ul>
         </menu>
     </header>
 
@@ -74,32 +51,65 @@
                     <tbody>
                         <tr>
                             <th>Rubi</th>
-                                <td>Conhecido pela marcante cor vermelha, que pode representar o amor, mas também o sangue, a ideia do ser humano como uma criatura mortal, por isso associada com <strong>ciências humanas</strong>.</td>
+                            <td>Conhecido pela marcante cor vermelha, que pode representar o amor, mas também o sangue,
+                                a ideia do ser humano como uma criatura mortal, por isso associada com <strong>ciências
+                                    humanas</strong>.</td>
                         </tr>
 
                         <tr>
                             <th>Safira</th>
-                            <td>Marcada pelo céu, e a ideia de sabedoria, busca pela verdade e exatidão, remetendo a sua coloração azul.</td>
+                            <td>Marcada pelo céu, e a ideia de sabedoria, busca pela verdade e exatidão, remetendo a sua
+                                coloração azul.</td>
                         </tr>
-                        
+
                         <tr>
                             <th>Esmeralda</th>
-                            <td>Reconhecida pela cor verde, trás a ideia de natureza, poder de cura e restauração da saúde, muito  associada a áreas biológicas e também as áreas da <strong>saúde</strong>.</td>
+                            <td>Reconhecida pela cor verde, trás a ideia de natureza, poder de cura e restauração da
+                                saúde, muito associada a áreas biológicas e também as áreas da <strong>saúde</strong>.
+                            </td>
                         </tr>
 
                         <tr>
                             <th>Ametista</th>
-                            <td>Associada a ciências socias, pela sua coloração violeta e a ideia de clarexa mental, além de utilizada como amuleto contra pensamentos negativos.</td>
+                            <td>Associada a ciências socias, pela sua coloração violeta e a ideia de clarexa mental,
+                                além de utilizada como amuleto contra pensamentos negativos.</td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+
+            <div id="video-anel">
+                <video autoplay muted loop>
+                    <source src="videos/videoanel.mp4" type="video/mp4">
+                </video>
             </div>
         </article>
     </main>
 
     <footer>
-
+        <a href="#">Dúvidas</a>
+        <a href="#">Formulário de contato</a>
+        <a href="#">Faça seu orçamento</a>
+        <a href="#">Emblemas</a>
     </footer>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                imenu.style.display = 'block'
+            } else {
+                imenu.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (imenu.style.display == 'block') {
+                imenu.style.display = 'none'
+            } else {
+                imenu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 
 </html>
