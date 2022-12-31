@@ -14,13 +14,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #b4d7f6;
-    height: 100vh;
-    width: 100vw;
 }
 
 header {
@@ -91,7 +89,7 @@ header > menu > ul > li > a:hover {
 main {
     background-color: #ffffff;
     min-width: 300px;
-    max-width: 1000px;
+    max-width: 800px;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
@@ -105,6 +103,14 @@ main > article > h2 {
     padding: 10px;
 }
 
+main > article > p {
+    text-align: justify;
+    text-indent: 30px;
+    margin: 15px 0px 15px 0px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
 div#container {
     overflow-x: auto;
     padding-top: 12px;
@@ -116,14 +122,18 @@ table {
     width: 700px;
 }
 
-th {
-    background-color: #b4d7f6;
-}
-
 th, td {
     border: 1px solid rgba(0, 0, 0, 0.571);
     padding: 8px;
     text-align: center;
+}
+
+th {
+    background-color: #b4d7f6;
+}
+
+td {
+    text-align: justify;
 }
 
 tr:nth-child(even) {
@@ -149,14 +159,20 @@ div.video > video {
 
 footer {
     background-color: #4422dd;
-    color: white;
+    color: #ffffff;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 0.8em;
+    padding: 12px;
 }
 
-footer > a {
+footer a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     padding: 8px;
     border-radius: 15px;
+}
+
+footer a:hover {
+    background-color: #4985F4;
+    transition-duration: 0.7s;
 }
