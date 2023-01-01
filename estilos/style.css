@@ -102,6 +102,7 @@ main > article > img {
     max-width: 400px;
     display: block;
     margin: auto;
+    padding: 20px;
 }
 
 main > article > h2 {
