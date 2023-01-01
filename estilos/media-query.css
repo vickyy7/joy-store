@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) {
+    html, body {
+        background: linear-gradient(45deg, #74BEC1, #516091, #6b85db, #9ce0e3, #81b7a8, #86c8b0);
+        background-size: 300% 300%;
+        animation: colors 15s ease infinite;
+    }
+
     span#iburguer  {
         display: none;
     }
@@ -21,5 +27,19 @@
 
     main {
         width: 768px;
+    }
+
+    @keyframes colors {
+        0% {
+            background-position: 0% 50%;
+        }
+    
+        50%{
+            background-position: 100% 50%;
+        }
+        
+        100%{
+            background-position: 0% 50%;
+        }
     }
 }
