@@ -120,8 +120,8 @@ main > article > p {
 p > a {
     text-decoration: none;
     color: purple;
-    padding: 7px;
-    border-radius: 8px;
+    padding: 4px;
+    border-radius: 4px;
 }
 
 p > a:hover {
