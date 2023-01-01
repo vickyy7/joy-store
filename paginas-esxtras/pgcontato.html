@@ -8,8 +8,7 @@
     <title>Joy Jewelry Store</title>
     <link rel="stylesheet" href="../estilos/style.css" media="all">
     <link rel="stylesheet" href="../estilos/media-query.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body onresize="mudouTamanho()">
@@ -28,29 +27,33 @@
     </header>
 
     <main>
-        <article>
-            <h2>Formuláro de Contato</h2>
+        <section id="icont">
+            <div id="iimg">
+                <h2>Formuláro de Contato</h2>
 
-            <p>Use este formulário para entrar em contato. Preencha corretamente para que consigamos te responder.</p>
-            <form action="#" method="post" autocomplete="on">
-                <p>
-                    <label for="inome">Nome</label>
-                    <input type="text" name="nome" id="inome" required placeholder="Seu nome">
+                <p>Use este formulário para entrar em contato. Preencha corretamente para que consigamos te responder.
                 </p>
-                <p>
-                    <label for="isobrenome">Sobrenome</label>
-                    <input type="text" name="sobrenome" id="isobrenome" required placeholder="Seu sobrenome">
-                </p>
-                <p>
-                    <label for="iemail">Email</label>
-                    <input type="email" name="email" id="iemail" required placeholder="seu email">
-                </p>
-                <p>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
-                </p>
-            </form>
 
+                <form action="#" method="post" autocomplete="on">
+                    <p>
+                        <label for="inome">Nome</label>
+                        <input type="text" name="nome" id="inome" required placeholder="Seu nome">
+                    </p>
+                    <p>
+                        <label for="isobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="isobrenome" required placeholder="Seu sobrenome">
+                    </p>
+                    <p>
+                        <label for="iemail">Email</label>
+                        <input type="email" name="email" id="iemail" required placeholder="seu email">
+                    </p>
+                    <p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </p>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
