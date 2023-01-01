@@ -19,8 +19,8 @@
         <span id="iburguer" class="material-symbols-outlined" onclick="clickMenu()">density_medium</span>
         <menu id="imenu">
             <ul>
+                <li><a href="../index.html" target="_blank">Páginas inicial</a></li>
                 <li><a href="../paginas-esxtras/pgduvidas.html" target="_blank">Dúvidas</a></li>
-                <li><a href="../paginas-esxtras/pgcontato.html" target="_blank">Formulário de contato</a></li>
                 <li><a href="../paginas-esxtras/pgorcamento.html" target="_blank">Faça seu orçamento</a></li>
                 <li><a href="../paginas-esxtras/pgemblemas.html" target="_blank">Emblemas</a></li>
             </ul>
@@ -32,55 +32,48 @@
             <h2>Formuláro de Contato</h2>
 
             <p>Use este formulário para entrar em contato. Preencha corretamente para que consigamos te responder.</p>
-            <form>
-                <label>Nome</label>
-                <input type="text" name="nome" placeholder="Digite seu nome">
-                <label><b>E-mail</b></label>
-                <input type="e-mail" name="email" placeholder="seuemail@gmail.com">
-                <label><b>Telefone</b></label>
-                <input type="tel" name="tel" placeholder="Ex: (00) 00000-0000">
+            <form action="#" method="post" autocomplete="on">
+                <p>
+                    <label for="inome">Nome</label>
+                    <input type="text" name="nome" id="inome" required placeholder="Seu nome">
+                </p>
+                <p>
+                    <label for="isobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="isobrenome" required placeholder="Seu sobrenome">
+                </p>
+                <p>
+                    <label for="iemail">Email</label>
+                    <input type="email" name="email" id="iemail" required placeholder="seu email">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
             </form>
-
-            <form>
-                <div>
-                    <p><b>Assunto<b></p>
-                    <textarea id="assuntos" class="input-textarea" nome="assunto"
-                        placeholder="Digite o assunto aqui..."></textarea>
-                </div>
-            </form>
-
-            <form>
-                <div>
-                    <p><b>Mensagem</b></p>
-                    <textarea id="mensagens" class="input-textarea" nome="mensagem"
-                        placeholder="Digite sua mensagem aqui..."></textarea>
-                </div>
-            </form>
-            </td>
-            </tr>
-            </table>
-            </div>
-            <a href="../paginas-externas/formulariodecontatofinal.html">
-                <center>
-                    <button class="botao-enviar">Enviar</button>
-                </center>
-            </a>
-            </section>
 
     </main>
 
-    <footer class="rodape">
-        <div>
-            <a href="../JoyJewelryStore.html">
-                <center>
-                    <button class="botao-final"><b>PÁGINA INICIAL</b></button>
-                </center>
-            </a>
-
-            <h4 class="rodape-escrito"><b>Joy Jewelry Store - Anel de Formatura - copyright © 2022 - Todos os direitos
-                    reservados.</b></h4>
-        </div>
+    <footer>
+        <a href="../index.html" target="_blank">Página inicial</a>
+        <a href="paginas-esxtras/pgduvidas.html" target="_blank">Dúvidas</a>
+        <a href="../paginas-esxtras/pgorcamento.html" target="_blank">Faça seu orçamento</a>
+        <a href="../paginas-esxtras/pgemblemas.html" target="_blank">Emblemas</a>
     </footer>
-</body>
 
-</html>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                imenu.style.display = 'block'
+            } else {
+                imenu.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (imenu.style.display == 'block') {
+                imenu.style.display = 'none'
+            } else {
+                imenu.style.display = 'block'
+            }
+        }
+    </script>
