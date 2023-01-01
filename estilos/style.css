@@ -13,10 +13,9 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 
-html, body {
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #b4d7f6;
 }
@@ -25,7 +24,7 @@ header {
     background-image: linear-gradient(to top, #8a2be2, #4422dd);
     min-height: 150px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 header > h1 {
@@ -89,7 +88,7 @@ header > menu > ul > li > a:hover {
 main {
     background-color: #ffffff;
     min-width: 300px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
@@ -178,22 +177,21 @@ div.video > video {
 }
 
 footer {
-    background-color: #4422dd;
-    color: #ffffff;
+    background-color: #8a2be2;
     text-align: center;
     font-size: 0.8em;
     padding: 12px;
-    margin-bottom: 10px;
 }
 
 footer a {
     text-decoration: none;
     color: #ffffff;
-    padding: 8px;
+    padding: 4px;
     border-radius: 15px;
+    text-decoration: none;
 }
 
 footer a:hover {
-    background-color: #4985F4;
+    background-color: cyan;
     transition-duration: 0.5s;
 }
