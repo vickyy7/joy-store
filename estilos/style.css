@@ -121,6 +121,7 @@ p > a {
     text-decoration: none;
     color: purple;
     padding: 7px;
+    border-radius: 8px;
 }
 
 p > a:hover {
