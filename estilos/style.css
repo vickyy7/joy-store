@@ -176,6 +176,23 @@ div.video > video {
     border-radius: 20px;
 }
 
+/* Configuração da página de contato*/
+
+section#icont > div#iimg {
+    display: block;
+    background: url(../imagens/img-forms.jpg) no-repeat;
+    background-size: cover;
+    background-position: top left;
+    height: 200px;
+}
+
+section#icont > div#iforms {
+    display: block;
+    padding: 10px;
+}
+
+
+/*----------------------------------*/
 footer {
     background-color: #8a2be2;
     text-align: center;
