@@ -101,12 +101,6 @@ main > article > img {
     padding: 20px;
 }
 
-main > article > h2 {
-    font-family: var(--font-subtitulo);
-    padding: 10px;
-    font-size: 1.5em;
-}
-
 main > article > p {
     text-align: justify;
     text-indent: 30px;
@@ -204,8 +198,8 @@ section#icont > div#iforms {
     padding: 10px;
 }
 
-div#iforms > h2 {
-    text-align: center;
+h2.subtitulo {
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
