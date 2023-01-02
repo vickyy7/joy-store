@@ -94,11 +94,12 @@ main {
     padding: 20px;
 }
 
-main > article > img {
-    max-width: 400px;
+main > article > div#iimg {
     display: block;
-    margin: auto;
-    padding: 20px;
+    background: #3E236C url(../imagens/vetoresboneco.jpg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 300px;
 }
 
 main > article > p {
@@ -185,13 +186,6 @@ div.video > video {
 
 /* Configuração da página de contato*/
 
-section#icont > div#iimg {
-    display: block;
-    background: url(../imagens/img-forms.jpg) no-repeat;
-    background-size: cover;
-    background-position: top left;
-    height: 200px;
-} 
 
 section#icont > div#iforms {
     display: block;
