@@ -29,7 +29,6 @@
     <main>
         <article>
             <h2>Solite um Orçamento</h2>
-            <img src="../imagens/forms-orca.jpg" alt="Vetor Orçamento" width="400">
 
             <section id="iorca">
                 <div id="iimg">
@@ -59,24 +58,30 @@
                         </div>
 
                         <div class="campo">
-                            <span class="material-symbols-outlined">school</span>
-                            <label for="isexo">Sexo: </label>
-                            <input type="text" name="sexo" id="isexo" list="listsexo"  required placeholder="escolha o seu sexo">
+                            <span class="material-symbols-outlined">wc</span>
+                            <label for="isexo">Sexo</label>
+                            <input type="text" name="sexo" id="isexo" list="listsexo"  required placeholder="escolha o seu sexo" autocomplete="sex">
                             <datalist id="listsexo">
-                                <option value="FEM">Feminino</option>
-                                <option value="MAS">Masculino</option>
+                                <option>Feminino</option>
+                                <option>Masculino</option>
                             </datalist>
                         </div>
 
                         <div class="campo">
                             <span class="material-symbols-outlined">school</span>
-                            <label for="icurso">Curso: </label>
-                            <input type="text" name="curso" id="icurso" list="listcusro"  required placeholder="digite seu curso">
+                            <label for="icurso">Curso</label>
+                            <input type="text" name="curso" id="icurso" list="listcusro"  required placeholder="digite seu curso" autocomplete="organization">
                             <datalist id="listcusro">
                                 <option value="ADM">Administração</option>
                                 <option value="CONT">Contabilidade</option>
                                 <option value="GTI">Gestão da tecnologia da informação</option>
                             </datalist>
+                        </div>
+
+                        <div class="campo">
+                            <span class="material-symbols-outlined">join</span>
+                            <label for="inum">Numeração do dedo</label>
+                            <input type="number" name="num" id="inum" required placeholder="numeração do seu dedo" min="7" max="34" autocomplete="cc-number">
                         </div>
     
                         <input type="submit" value="Enviar">
