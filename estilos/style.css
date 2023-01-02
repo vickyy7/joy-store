@@ -102,6 +102,14 @@ main > article > div#iimg {
     height: 300px;
 }
 
+main > article > div#iimgduvida {
+    display: block;
+    background: #ffffff url(../imagens/pngduvida.png) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 600px;
+}
+
 main > article > p {
     text-align: justify;
     text-indent: 30px;
