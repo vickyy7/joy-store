@@ -137,13 +137,28 @@ table {
     margin: auto;
 }
 
+div#container, table {
+    transform: scaleY(-1);
+}
+
+thead {
+    align-items: center;
+}
+
+thead {
+    background-color: #91c9fa;
+}
+
+tbody > tr > th {
+    text-align: left;
+}
+
 th, td {
     border: 1px solid rgba(0, 0, 0, 0.571);
     padding: 8px;
-    text-align: center;
 }
 
-th {
+tbody > th {
     background-color: #b4d7f6;
 }
 
@@ -151,7 +166,7 @@ td {
     text-align: justify;
 }
 
-tr:nth-child(even) {
+tr:nth-child(odd) {
     background-color: #4985f451;
 }
 
