@@ -57,6 +57,17 @@
                             <label for="icel">Celular</label>
                             <input type="tel" name="cel" id="icel" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="seu celular (xx)xxxxx-xxxx" size="10">
                         </div>
+
+                        <div class="campo">
+                            <span class="material-symbols-outlined">school</span>
+                            <label for="icurso">Curso: </label>
+                            <input type="text" name="curso" id="icurso" list="listcusro"  required>
+                            <datalist id="listcusro">
+                                <option value="ADM">Administração</option>
+                                <option value="CONT">Contabilidade</option>
+                                <option value="GTI">Gestão da tecnologia da informação</option>
+                            </datalist>
+                        </div>
     
                         <input type="submit" value="Enviar">
                         <input type="reset" value="Limpar">
