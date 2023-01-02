@@ -133,7 +133,7 @@ div#container {
 
 table {
     border-collapse: collapse;
-    width: 700px;
+    width: 690px;
     margin: auto;
 }
 
@@ -163,7 +163,7 @@ tbody > th {
 }
 
 td {
-    text-align: justify;
+    text-align: left;
 }
 
 tr:nth-child(odd) {
