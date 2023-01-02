@@ -60,8 +60,18 @@
 
                         <div class="campo">
                             <span class="material-symbols-outlined">school</span>
+                            <label for="isexo">Sexo: </label>
+                            <input type="text" name="sexo" id="isexo" list="listsexo"  required placeholder="escolha o seu sexo">
+                            <datalist id="listsexo">
+                                <option value="FEM">Feminino</option>
+                                <option value="MAS">Masculino</option>
+                            </datalist>
+                        </div>
+
+                        <div class="campo">
+                            <span class="material-symbols-outlined">school</span>
                             <label for="icurso">Curso: </label>
-                            <input type="text" name="curso" id="icurso" list="listcusro"  required>
+                            <input type="text" name="curso" id="icurso" list="listcusro"  required placeholder="digite seu curso">
                             <datalist id="listcusro">
                                 <option value="ADM">Administração</option>
                                 <option value="CONT">Contabilidade</option>
